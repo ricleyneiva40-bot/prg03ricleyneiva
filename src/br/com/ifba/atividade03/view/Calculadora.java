@@ -127,12 +127,12 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void btncalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncalcularActionPerformed
         // TODO add your handling code here:
-        String strAnoNascimento = txtAnoNascimento.getText();
-        int ano = Integer.parseInt(strAnoNascimento);
-        int idade = 2025 - ano;
-        String strIdade = String.valueOf(idade);
-        txtIdade.setText(strIdade);
-        txtAnoNascimento.setText("");
+        String strAnoNascimento = txtAnoNascimento.getText();//Pega o valor digitado no textField
+        int ano = Integer.parseInt(strAnoNascimento);//Tranforma o valor de String para inteiro
+        int idade = 2025 - ano;//A logica pra descobrir a idade
+        String strIdade = String.valueOf(idade);//Tranforma o valor de idade em String
+        txtIdade.setText(strIdade);//Manda pra interface grafica no formato de String
+        txtAnoNascimento.setText("");//Limpa o textField da digitacao do ano de nascimento
     }//GEN-LAST:event_btncalcularActionPerformed
 
     /**
