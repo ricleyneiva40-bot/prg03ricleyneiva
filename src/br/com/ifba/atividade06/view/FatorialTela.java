@@ -95,10 +95,16 @@ public class FatorialTela extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
+        //Tranformando o valor do spinner em inteiro
         int numero = Integer.parseInt(spnNumero.getValue().toString());
+        //Criando um objeto fe uma nova classe fatorial
         FatorialNumero fat = new FatorialNumero();
+        
+        //Passa o numero escolhido pelo spinner, atraves de metodos
         fat.setValor(numero);
+        //Passa a formula de fatorial com o novo objeto
         lblFormula.setText(fat.getFormula());
+        //Passa o resultado do fatorial e em seguida ja faz a conversao para inteiro
         lblResultado.setText(Integer.toString(fat.getFatorial()));
     }//GEN-LAST:event_btnCalcularActionPerformed
 
