@@ -15,7 +15,6 @@ public class FatorialNumero {
     private String formula = ""; //Formula do fatorial
     
     public void setValor(int n){
-        //Variaveis atribuidas
         numero = n;
         int f = 1;
         String s = "";
